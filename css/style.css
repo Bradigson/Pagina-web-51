@@ -1,0 +1,245 @@
+header{
+    position:fixed;
+    background:rgba(0,0,0,0.4);
+    height:100vh;
+    width:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;
+}
+
+ul li{
+    margin-bottom:80px;
+    list-style: none;
+}
+ul li > a{
+    color:#eee;
+    font-size:20px;
+    text-decoration:none;
+    border-bottom:3px solid #eee;
+    padding-bottom:25px;
+    text-shadow:1px 2px 1px rgba(0,0,0,0.3);
+}
+ul li a > i{
+    border:2px solid #eee;
+    padding:10px 10px;
+    margin-right:10px;
+    border-radius:10em;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+
+}
+ul li > a:hover{
+    color: #9dafe2 ;
+    border-bottom:3px solid #9dafe2;
+
+}
+ul li  a:hover > i{
+    border:2px solid #9dafe2;
+
+}
+
+/*sesion1*/
+.sesion1{
+    position:relative;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../imgs/pexels-michał-osiński-3454270.jpg);
+    background-size:cover;
+    overflow:hidden;
+}
+.sesion1__article1{
+    width:50%;
+    height:40%;
+    color:#eee;
+    padding:0px 10px;
+    font-size:22px;
+    margin-left:150px;
+    margin-top:100px;
+}
+.sesion1__article1 > a{
+    width:190px;
+}
+
+#h2{
+    animation-name:efect;
+    animation-duration:3s;
+    animation-iteration-count:1;
+
+}
+#p{
+    animation-name:efect;
+    animation-duration:4s;
+    animation-iteration-count:1;
+}
+#a{
+    animation-name:efect;
+    animation-duration:5s;
+    animation-iteration-count:1;
+}
+@keyframes efect{
+    0%{
+        transform:translatex(1100px);
+    }
+}
+/*sesion2*/
+.sesion2{
+    position:relative;
+}
+.sesion2__article1{
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../imgs/pexels-philip-ackermann-878151.jpg);
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    color:#eee;
+    text-shadow:1px 2px 1px rgba(255,255,255,.3);
+}
+.productos{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:80%;
+    margin-left:230px;
+}
+.product1{
+    width:300px;
+    height:400px;
+    margin-right:20px;
+}
+.product1 > img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+
+/*article 2*/
+.sesion2__article2{
+    background:linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.0)), url(../imgs/pexels-pixabay-355241.jpg);
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    color:#eee;
+
+}
+.companies{
+
+    display:grid;
+    grid-template-columns:150px 150px;
+    grid-column-gap:380px;
+    grid-row-gap:50px;
+    justify-content: center;
+    width:80%;
+    padding-right:250px;
+    margin-left:150px;
+}
+.ompany1{
+    color:#eee;
+    outline:1px solid #eee;
+    width:480px;
+    height:300px;
+    display:flex;
+    align-items:center;
+    padding:10px 10px;
+    background:rgba(0,0,0,0.3);
+    
+
+}
+.ompany1  div > i{
+    border:2px solid #eee;
+    border-radius:10em;
+    padding:10px 10px;
+    margin-right:40px;
+}
+.bxl-apple, .bxs-map-pin, .bx-globe, .bxs-cube-alt{
+    font-size:100px;
+}
+.sesion2__article2 > h2{
+    margin-left:-240px;
+    text-shadow:1px 2px  1px rgba(0,0,0,0.4);
+}
+
+
+/*article 3*/
+.sesion2__article3{
+    background:linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.0)), url(../imgs/pexels-chattrapal-\(shitij\)-singh-2989626.jpg);
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+
+}
+.content{
+    width:60%;
+    height:550px;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:row;
+    margin-left:200px;
+}
+form{
+    height:100%;
+    width:1300px;
+    padding:20px 10px;
+    color:#eee;
+    display:flex;
+    flex-direction: column;
+    margin-right:30px;
+}
+form > input{
+  margin:20px 0px;
+    line-height:2;
+    padding-left:20px;
+    background:none;
+    border:1px solid #eee;
+    color:#eee;
+    outline:none;
+}
+form > input::placeholder{
+    color:#eee;
+}
+
+#tarea{
+    
+
+    resize: none;
+    line-height:2;
+    padding-left:20px;
+    background:none;
+    border:1px solid #eee;
+    outline:none;
+    height:150px;
+    color:#eee;
+}
+#tarea::placeholder{
+    color:#eee
+}
+#boton{
+    margin-top:50px;
+}
+.descripcion{
+    display:flex;
+    align-items: center;
+    padding:0px 20px;
+    color:#eee;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+    background:rgba(83, 76, 76, 0.787);
+}
+::-webkit-scrollbar-thumb{
+    background:hsla(0, 0%, 15%, 0.774);
+    border-radius:15px;
+}
